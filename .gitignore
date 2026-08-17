@@ -18,6 +18,15 @@ cv/*.synctex.gz
 cv/*.toc
 cv/cv.pdf
 
+# Camera original for the headshot. assets/headshot.jpg is generated from it
+# (square crop, resized, EXIF stripped) and is the file the site actually uses,
+# so there is no reason to publish a 645KB HEIC the browser cannot display.
+*.heic
+*.HEIC
+
+# Debug output of tools/make_headshot.py --preview
+assets/headshot-preview.png
+
 # OS
 .DS_Store
 Thumbs.db

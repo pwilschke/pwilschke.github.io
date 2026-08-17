@@ -59,6 +59,24 @@ in the `.qmd`, which already has a template in it.
 `papers/` folder at the repo root and link to it as `papers/name.pdf` — Quarto
 copies it into `docs/` automatically.
 
+## The headshot
+
+`assets/headshot.jpg` is generated from the camera original, which is gitignored
+because browsers cannot display HEIC:
+
+```powershell
+pip install pillow pillow-heif
+python tools/make_headshot.py headshot.heic
+```
+
+The script squares the crop, resizes to 3x display size, and strips EXIF. To
+reframe, run it with `--preview` to get a coordinate grid over the full frame,
+read new numbers off it, and edit `CROP` at the top of the script.
+
+The home page lays the photo out beside the name rather than using Quarto's
+title block — which is why `index.qmd` has no `title:` and sets `pagetitle:`
+instead. See the `.hero` rules in `styles.scss`.
+
 ## The CV
 
 `cv/cv.tex` is the source of truth. Edit it, then run `.\build.ps1`, which

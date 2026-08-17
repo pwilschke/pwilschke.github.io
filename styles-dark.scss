@@ -69,6 +69,66 @@ h2 {
   margin-bottom: 2rem;
 }
 
+// Home-page header: headshot on the left, name/role/contact stacked on the right.
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin: 0.25rem 0 2.25rem;
+}
+
+body:has(.hero) #title-block-header {
+  display: none;
+}
+
+.headshot {
+  flex: 0 0 auto;
+
+  p { margin: 0; }
+
+  img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    // The photo has a bright background; a hairline keeps it from bleeding into
+    // the dark page.
+    box-shadow: 0 0 0 1px #2a313a;
+  }
+}
+
+.hero-text {
+  min-width: 0;
+}
+
+.hero-text h1 {
+  font-size: 2.1rem;
+  margin: 0 0 0.2rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.hero-role {
+  font-size: 1.05rem;
+  color: #98a3af;
+  margin-bottom: 0.7rem;
+}
+
+.hero .contact-row {
+  margin-bottom: 0;
+}
+
+@media (max-width: 560px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .headshot img { width: 124px; height: 124px; }
+  .hero-name { font-size: 1.8rem; }
+}
+
 ul.interests {
   padding-left: 1.1rem;
   li { margin-bottom: 0.35rem; }

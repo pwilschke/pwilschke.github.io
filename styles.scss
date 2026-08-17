@@ -73,6 +73,70 @@ h2 {
   margin-bottom: 2rem;
 }
 
+// Home-page header: headshot on the left, name/role/contact stacked on the right.
+// The image is sized to stand about as tall as that stack.
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin: 0.25rem 0 2.25rem;
+}
+
+// index.qmd sets no `title:`, so Quarto still emits an empty title block that
+// would push the hero down. Hide it only on the page that has a hero -- the
+// other pages use their title blocks normally.
+body:has(.hero) #title-block-header {
+  display: none;
+}
+
+.headshot {
+  flex: 0 0 auto;
+
+  p { margin: 0; }          // Pandoc wraps a bare image in <p>
+
+  img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;      // square crop is baked in, but never letterbox
+    border-radius: 6px;
+  }
+}
+
+.hero-text {
+  min-width: 0;             // let long text wrap instead of stretching the flex row
+}
+
+// The name. Pandoc turns `# Peter Wilschke` into a <section> carrying
+// .hero-text, with the <h1> inside it -- so target the h1, not a class of its
+// own, which would land on the wrapper instead of the heading.
+.hero-text h1 {
+  font-size: 2.1rem;
+  margin: 0 0 0.2rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.hero-role {
+  font-size: 1.05rem;
+  color: #5a6470;
+  margin-bottom: 0.7rem;
+}
+
+.hero .contact-row {
+  margin-bottom: 0;         // the .hero margin already spaces this off the body text
+}
+
+@media (max-width: 560px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .headshot img { width: 124px; height: 124px; }
+  .hero-name { font-size: 1.8rem; }
+}
+
 // Research-interest list: tighter than a default <ul>.
 ul.interests {
   padding-left: 1.1rem;
