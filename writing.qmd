@@ -1,0 +1,33 @@
+---
+title: "Writing"
+page-layout: article
+---
+
+<!--
+NOT PUBLISHED YET. This file is excluded from the build in _quarto.yml
+("!writing.qmd" under project.render) and its navbar entry is commented out.
+To publish: delete that render line, uncomment the navbar entry, fill in below.
+
+Two ways people usually use this tab -- pick one and delete the other:
+
+  (a) Short non-academic writing: policy briefs, op-eds, explainers.
+  (b) A blog. For that, Quarto has a purpose-built listing page; replace the
+      body of this file with:
+
+        ---
+        title: "Writing"
+        listing:
+          contents: posts
+          sort: "date desc"
+          type: default
+          fields: [date, title, description, reading-time]
+        ---
+
+      then put one .qmd per post in a posts/ folder, each with a title, date,
+      and description in its front matter. Add "posts" to project.render.
+-->
+
+## Policy writing
+
+**Title of the brief or piece** · Outlet or institution · Month Year
+One sentence on what it argued. [Link](https://example.org)

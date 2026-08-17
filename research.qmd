@@ -1,0 +1,57 @@
+---
+title: "Research"
+page-layout: article
+---
+
+My work is in health economics, with a focus on insurance markets and the
+regulatory machinery behind them. Three threads run through it.
+
+## Insurer capital regulation
+
+Health insurers hold capital against risk under the NAIC's risk-based capital
+formula, and they can change what that formula requires of them — most directly
+by ceding premium to a reinsurer. I am interested in what insurers pay for that
+relief, what the price reveals about how binding the requirements are, and
+whether the capital freed up is put to productive use.
+
+## Coverage expansion and market design
+
+The Affordable Care Act left states a good deal of discretion, and they have used
+it differently: reinsurance waivers, mandate structures, and Medicaid
+arrangements vary widely. These differences make useful variation for studying
+how coverage, premiums, and insurer participation respond to policy design.
+
+## Prices and transparency
+
+Federal rules now require hospitals and insurers to publish negotiated prices.
+The resulting data are large, messy, and inconsistently posted, but they describe
+a part of the health system that was previously unobservable. I have worked on
+assembling and standardizing these files, and I am interested in what they show
+about how market structure affects what payers actually pay.
+
+::: {.note}
+I began the PhD in 2026, so there is nothing here to post yet. Working papers
+will appear on this page as they are ready; the [CV](cv.qmd) has the full record
+of research experience in the meantime.
+:::
+
+<!-- ---------------------------------------------------------------------------
+TEMPLATE for when there is a paper to list. Delete the surrounding comment
+markers and fill in. Keep the newest paper at the top of each section.
+
+## Working papers
+
+### Paper Title Goes Here
+*with Coauthor Name* · [PDF](papers/short-name.pdf) · [Slides](papers/short-name-slides.pdf)
+
+One-paragraph abstract. Say the question, the data, the design, and the finding.
+Three or four sentences is plenty -- the paper is one click away.
+
+<span class="note">Draft, March 2027. Comments welcome.</span>
+
+## Work in progress
+
+### Another Title
+Short description, one or two sentences. No link needed until there is a draft.
+
+---------------------------------------------------------------------------- -->

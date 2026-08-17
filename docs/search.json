@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My work is in health economics, with a focus on insurance markets and the regulatory machinery behind them. Three threads run through it."
+  },
+  {
+    "objectID": "research.html#insurer-capital-regulation",
+    "href": "research.html#insurer-capital-regulation",
+    "title": "Research",
+    "section": "Insurer capital regulation",
+    "text": "Insurer capital regulation\nHealth insurers hold capital against risk under the NAIC’s risk-based capital formula, and they can change what that formula requires of them — most directly by ceding premium to a reinsurer. I am interested in what insurers pay for that relief, what the price reveals about how binding the requirements are, and whether the capital freed up is put to productive use."
+  },
+  {
+    "objectID": "research.html#coverage-expansion-and-market-design",
+    "href": "research.html#coverage-expansion-and-market-design",
+    "title": "Research",
+    "section": "Coverage expansion and market design",
+    "text": "Coverage expansion and market design\nThe Affordable Care Act left states a good deal of discretion, and they have used it differently: reinsurance waivers, mandate structures, and Medicaid arrangements vary widely. These differences make useful variation for studying how coverage, premiums, and insurer participation respond to policy design."
+  },
+  {
+    "objectID": "research.html#prices-and-transparency",
+    "href": "research.html#prices-and-transparency",
+    "title": "Research",
+    "section": "Prices and transparency",
+    "text": "Prices and transparency\nFederal rules now require hospitals and insurers to publish negotiated prices. The resulting data are large, messy, and inconsistently posted, but they describe a part of the health system that was previously unobservable. I have worked on assembling and standardizing these files, and I am interested in what they show about how market structure affects what payers actually pay.\n\nI began the PhD in 2026, so there is nothing here to post yet. Working papers will appear on this page as they are ready; the CV has the full record of research experience in the meantime."
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "Download PDF   Last updated August 2026\n\n\nYour browser will not display the PDF inline. Download it instead."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Peter Wilschke",
+    "section": "",
+    "text": "pwilschke@g.harvard.edu · CV · GitHub\nI am a first-year PhD student in Health Policy at Harvard University, on the economics track.\nI study health insurance markets and the regulations that shape them — how insurers respond to capital requirements, how prices are set and disclosed, and what these mechanisms mean for the cost and availability of coverage.\nBefore starting at Harvard I spent two years as a research assistant at the Federal Reserve Board, in the Flow of Funds section, working with Board economists on projects spanning insurance pricing, bank lending, and household outcomes. Earlier I worked at the Hilltop Institute on hospital price transparency, assembling newly public pricing data across 31 states. I hold a BA in Economics and Political Science from UMBC."
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Peter Wilschke",
+    "section": "Research interests",
+    "text": "Research interests\n\n\nHealth insurance regulation — risk-based capital, reinsurance, medical loss ratios\nACA exchanges and state reinsurance programs\nHospital pricing and price transparency\nMedicaid and Medicare managed care\nApplied microeconometrics: bunching and kink designs, event studies\n\n\nSee Research for more, or the CV for the full record."
+  }
+]

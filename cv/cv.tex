@@ -1,0 +1,216 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,11pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+
+% job listing environments
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\huge{Peter Wilschke} \\[7.5pt]
+\href{mailto:pwilschke@g.harvard.edu}{\raisebox{-0.05\height}\faEnvelope \ pwilschke@gmail.com} \ $|$ \ 
+\href{tel:4102363175}{\raisebox{-0.05\height}\faMobile \ 410.236.3175} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+
+2026-Present & Health Policy PhD (economics track) at \textbf{Harvard University} \\
+
+Fall 2024 & Real Analysis at \textbf{Harvard Extension School} \hfill \normalsize (GPA: 4.0) \\
+
+2020-2024 & BA, Economics \& Political Science at \textbf{University of Maryland, Baltimore County} \hfill (GPA: 4.0) \\ 
+
+\end{tabularx}
+
+%Experience
+\section{Research Experience}
+
+\begin{joblong}{Research Assistant, Federal Reserve Board}{June 2024 - August 2026}
+\item Worked with Board economists on a variety of research projects, including making regression outputs in Stata and LaTeX for a \textit{QJE} revision on insurance pricing of flood risk; writing algorithms in R to identify bank lending to municipalities in supervisory data; coding Monte Carlo simulations in R for a paper studying the effect of standardized test question responses on life outcomes; linking firms and banks involved in loans to asset managers that hold them; and extracting financial data from PDFs using an LLM API in Python
+\item Assisted with a variety of Board policy work in the Flow of Funds section, including the pensions and insurance sectors of the Z.1 Financial Accounts; Quantitative Surveillance rounds; pre-FOMC Tealbook charts; rewriting policy products into LaTeX; and ad hoc briefings
+\item Submitted an NSF GRFP research proposal on Affordable Care Act state reinsurance programs
+\item Co-taught AP Macroeconomics at Banneker High School for the 2025-26 school year
+\end{joblong}
+
+\begin{joblong}{Research Assistant, Hilltop Institute}{October 2022 - May 2024}
+\item Collected thousands of newly public hospital price transparency datasets across 31 states
+\item Cleaned hospital data files in Stata and SAS; wrote an algorithm to standardize insurer names
+\item Wrote a research brief examining how market concentration affects hospital pricing
+\item Designed graphics for publication on Hilltop's website
+\end{joblong}
+
+\begin{joblong}{Economic Research Intern, Federal Reserve Board}{June - August 2023}
+\item Assisted Board economists with data cleaning and robustness checks in Stata and Matlab for research projects
+\item Collected data for 35 countries, using a variety of data sources, to help Board economists design an international nowcasting model in R
+\item Worked with the Y-14 corporate loan dataset: cleaning, merging, and using for model testing in Stata
+\end{joblong}
+
+\begin{joblong}{Research Assistant, Leadership Alliance}{June - August 2022}
+\item Wrote and presented a research paper on the impacts of the Affordable Care Act's individual mandate
+\item Collected and cleaned data in Stata for a paper on discrimination in economics under Dr. Pietro Veronesi 
+\end{joblong}
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+% Commented out while citations.bib has no real entries -- an empty "Publications"
+% heading on a public CV reads worse than no heading. Add entries to citations.bib
+% and delete the two % marks below to switch it back on.
+%\section{Publications}
+%\begin{refsection}[citations.bib]
+%\nocite{*}
+%\printbibliography[heading=none]
+%\end{refsection}
+% PROGRAMMING
+\section{Programming Languages}
+Advanced: R, Stata, LaTeX; Intermediate: Python, SQL, Markdown
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+\section{Awards}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{iOme Challenge Winner} &  \normalsize{Led a team to victory in the 2024 iOme Retirement Policy Challenge, where we submitted a paper on improving US retirement policy
+}\\ 
+\textbf{Pittman Scholarship} &  \normalsize{UMBC award for exemplary students studying economics and political science
+}\\ 
+\textbf{URA Scholarship} &  \normalsize{UMBC award for students conducting individual, guided, research
+}\\
+\end{tabularx}
+
+\end{document}

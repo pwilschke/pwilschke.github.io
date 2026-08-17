@@ -1,0 +1,13 @@
+---
+title: "CV"
+page-layout: article
+---
+
+[Download PDF](cv.pdf){.btn .btn-outline-secondary .btn-sm} &nbsp; <span class="note" style="border:none; padding:0; margin:0;">Last updated August 2026</span>
+
+<object data="cv.pdf" type="application/pdf" class="pdf-frame">
+  <p>
+    Your browser will not display the PDF inline.
+    <a href="cv.pdf">Download it instead</a>.
+  </p>
+</object>

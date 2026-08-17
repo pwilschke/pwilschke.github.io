@@ -1,0 +1,37 @@
+---
+title: "Peter Wilschke"
+subtitle: "PhD Student in Health Policy · Harvard University"
+page-layout: article
+---
+
+::: {.contact-row}
+[pwilschke@g.harvard.edu](mailto:pwilschke@g.harvard.edu) ·
+[CV](cv.qmd) ·
+[GitHub](https://github.com/pwilschke)
+:::
+
+I am a first-year PhD student in Health Policy at Harvard University, on the
+economics track.
+
+I study health insurance markets and the regulations that shape them — how
+insurers respond to capital requirements, how prices are set and disclosed, and
+what these mechanisms mean for the cost and availability of coverage.
+
+Before starting at Harvard I spent two years as a research assistant at the
+**Federal Reserve Board**, in the Flow of Funds section, working with Board
+economists on projects spanning insurance pricing, bank lending, and household
+outcomes. Earlier I worked at the **Hilltop Institute** on hospital price
+transparency, assembling newly public pricing data across 31 states. I hold a BA
+in Economics and Political Science from UMBC.
+
+## Research interests
+
+::: {.interests}
+- Health insurance regulation — risk-based capital, reinsurance, medical loss ratios
+- ACA exchanges and state reinsurance programs
+- Hospital pricing and price transparency
+- Medicaid and Medicare managed care
+- Applied microeconometrics: bunching and kink designs, event studies
+:::
+
+See [Research](research.qmd) for more, or the [CV](cv.qmd) for the full record.

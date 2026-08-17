@@ -1,0 +1,26 @@
+---
+title: "Teaching"
+page-layout: article
+---
+
+<!--
+NOT PUBLISHED YET. This file is excluded from the build in _quarto.yml
+("!teaching.qmd" under project.render) and its navbar entry is commented out.
+To publish: delete that render line, uncomment the navbar entry, fill in below.
+
+The AP Macroeconomics co-teaching at Banneker High School (2025-26) already on
+the CV would go here as teaching experience.
+-->
+
+## Harvard University
+
+**Course Name** · Teaching Fellow · Semester Year
+Instructor: Name. Brief note on what you covered — sections, problem-set design,
+review sessions. One or two lines.
+
+[Section notes](teaching/course-notes.pdf) · [Evaluations available on request]
+
+## Other teaching
+
+**AP Macroeconomics**, Banneker High School · Co-instructor · 2025–26
+One line on the role.

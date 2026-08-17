@@ -1,0 +1,28 @@
+# Quarto
+/.quarto/
+*_files/
+*_cache/
+
+# LaTeX build artifacts from cv/. cv.tex and citations.bib are tracked;
+# cv/cv.pdf is not -- the published copy is the one at the repo root.
+cv/*.aux
+cv/*.bbl
+cv/*.bcf
+cv/*.blg
+cv/*.fdb_latexmk
+cv/*.fls
+cv/*.log
+cv/*.out
+cv/*.run.xml
+cv/*.synctex.gz
+cv/*.toc
+cv/cv.pdf
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# NOTE: docs/ is deliberately NOT ignored. GitHub Pages serves the site from
+# that folder, so the rendered output must be committed. Same for the root
+# cv.pdf, which is the file the site links to.

@@ -1,0 +1,57 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+    # Pages that exist but are NOT published yet. Delete a line here (and add the
+    # matching navbar entry below) when there is real content to put on it.
+    - "!teaching.qmd"
+    - "!writing.qmd"
+  resources:
+    - "cv.pdf"
+    # cv/ holds the LaTeX source and its build output; only the root cv.pdf ships.
+    - "!cv/"
+
+website:
+  title: "Peter Wilschke"
+  description: "PhD student in Health Policy (economics track) at Harvard University."
+  site-url: "https://pwilschke.github.io"
+  favicon: assets/favicon.svg
+  navbar:
+    pinned: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: cv.qmd
+        text: CV
+      # Uncomment alongside the render lines above when these have content:
+      # - href: teaching.qmd
+      #   text: Teaching
+      # - href: writing.qmd
+      #   text: Writing
+    right:
+      - icon: envelope
+        href: "mailto:pwilschke@g.harvard.edu"
+        aria-label: Email
+      - icon: github
+        href: "https://github.com/pwilschke"
+        aria-label: GitHub
+  page-footer:
+    center: |
+      © 2026 Peter Wilschke · Built with [Quarto](https://quarto.org)
+  open-graph: true
+  twitter-card: false
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles.scss]
+      dark: [darkly, styles-dark.scss]
+    css: []
+    toc: false
+    anchor-sections: false
+    smooth-scroll: true
+    link-external-newwindow: true
+    link-external-icon: false

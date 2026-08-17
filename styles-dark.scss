@@ -1,0 +1,101 @@
+/*-- scss:defaults --*/
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+  "Times New Roman", serif !default;
+
+$body-color:        #d7dce2 !default;
+$body-bg:           #14181d !default;
+$link-color:        #6fb3cf !default;
+$link-hover-color:  #9fd0e5 !default;
+
+$navbar-bg:         #14181d !default;
+$navbar-fg:         #d7dce2 !default;
+
+$font-size-root:    17px !default;
+$headings-font-weight: 600 !default;
+
+/*-- scss:rules --*/
+
+.page-columns .content {
+  max-width: 46rem;
+}
+
+body {
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-family-serif;
+  letter-spacing: -0.01em;
+}
+
+h1.title {
+  font-size: 2.1rem;
+  margin-bottom: 0.15rem;
+}
+
+.subtitle, .lede {
+  font-size: 1.05rem;
+  color: #98a3af;
+  margin-bottom: 1.75rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #2a313a;
+}
+
+.navbar {
+  border-bottom: 1px solid #2a313a;
+  font-size: 0.95rem;
+}
+
+.navbar-title {
+  font-family: $font-family-serif;
+  font-weight: 600;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+ul.interests {
+  padding-left: 1.1rem;
+  li { margin-bottom: 0.35rem; }
+}
+
+.note {
+  font-size: 0.92rem;
+  color: #98a3af;
+  border-left: 3px solid #2a313a;
+  padding: 0.15rem 0 0.15rem 0.9rem;
+  margin: 1.5rem 0;
+}
+
+.pdf-frame {
+  width: 100%;
+  height: 85vh;
+  min-height: 520px;
+  border: 1px solid #2a313a;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+  .pdf-frame { height: 60vh; }
+}
+
+.footer {
+  font-size: 0.85rem;
+  color: #98a3af;
+}
